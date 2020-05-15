@@ -1,4 +1,5 @@
 .terraform/
+.terraformold/
 terraform.tfstate.backup
 terraform.tfstate
 terraform.tfvars
@@ -9,3 +10,6 @@ kubeconfig*
 *_values.yaml
 terraform/terraform.tfvars
 nohup.out
+ambassador-qotm/.DS_Store
+ambassador-qotm/notes
+.DS_Store

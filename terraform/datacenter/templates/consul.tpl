@@ -121,7 +121,7 @@ services:
     environment:
       LISTEN_ADDR: 0.0.0.0:9094
       NAME: currency
-      MESSAGE: "Currency Service running in ${cluster-name}"
+      MESSAGE: "Backend Currency Service running in ${cluster-name} VM"
       SERVER_TYPE: "http"
     volumes:
       - "./currency.hcl:/config/currency.hcl"
@@ -144,7 +144,7 @@ version: "3.3"
 services:
 
   gateway:
-    image: nicholasjackson/consul-envoy
+    image: nicholasjackson/consul-envoy:v1.7.0-v0.12.2
     network_mode: "host"
     environment:
       CONSUL_HTTP_ADDR: $LAN_IP:8500
